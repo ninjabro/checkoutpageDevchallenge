@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/11a33a0b16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>check out page</title>
+  </head>
+  <body>
+    <div class="bodywrapper">
+      <div class="checkoutContainer">
+        <div class="wrapper">
+          <div class="productcheckContainer">
+            <div class="contactContainer">
+              <div class="checkout">
+                <p>checkout</p>
+              </div>
+              <h2 class="contactinfo">Contact information</h2>
+              <div class="form">
+                <div class="email">
+                  <h3>E-mail</h3>
+                  <div class="formContainer">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Enter your email..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form">
+                <div class="phone">
+                  <h3>phone</h3>
+                  <div class="formContainer">
+                    <i class="fa-solid fa-phone"></i>
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Enter your phone..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shippingContainer">
+              <h2 class="shippingAddress">Shipping address</h2>
+              <div class="form">
+                <div class="name">
+                  <h3>Name</h3>
+
+                  <div class="formContainer">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <input
+                      type="name"
+                      name=""
+                      id=""
+                      placeholder="Arun cotton"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form">
+                <div class="address">
+                  <h3>Address</h3>
+                  <div class="formContainer">
+                    <i class="fa-solid fa-house"></i>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Enter your address..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form">
+                <div class="city">
+                  <h3>City</h3>
+                  <div class="formContainer">
+                    <i class="fa-solid fa-city"></i>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Your city..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="country__postal">
+                <div class="form">
+                  <div class="country">
+                    <h3>country</h3>
+                    <div class="formContainer">
+                      <i class="fa-solid fa-earth-americas"></i>
+                      <select name="country_options" id="">
+                        <option value="your country">Your country...</option>
+                        <option value="thanjavur">Thanjavur</option>
+                        <option value="trichirapalli">Trichirapalli</option>
+                        <option value="chennai">Chennai</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="postal">
+                    <h3>postal code</h3>
+                    <div class="formContainer">
+                      <i class="fa-solid fa-signs-post"></i>
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Your postal code..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="saveInfo">
+                <div>
+                  <input type="checkbox" />
+                  <label for="checkbox"
+                    >Save this information for next time</label
+                  >
+                </div>
+                <button type="submit" class="cont__btn">Continue</button>
+              </div>
+            </div>
+          </div>
+          <div class="productContainer">
+            <div class="productcart">
+              <div class="item1">
+                <div class="productImg">
+                  <img src="./photo1.png" alt="" />
+                </div>
+                <div class="countcontainer">
+                  <div class="producatname__price">
+                    <p>Vintage Backbag</p>
+                    <p class="currentPrice">
+                      $54.99 <span class="original_price">$94.99</span>
+                    </p>
+                  </div>
+                  <div class="count_bag">
+                    <button class="minus" onclick="minusBag()">-</button>
+                    <input
+                      type="text"
+                      class="bagNumber"
+                      id="bagNumber"
+                      value="0"
+                    />
+                    <button
+                      class="add"
+                      value="increase value"
+                      onclick="addBag()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item1">
+                <div class="productImg">
+                  <img src="./photo2.png" alt="" />
+                </div>
+                <div class="countcontainer">
+                  <div class="productname__price">
+                    <p>Levi shoes</p>
+                    <p class="currentPrice">
+                      $74.99 <span class="original_price">$124.99</span>
+                    </p>
+                  </div>
+                  <div class="count_shoes">
+                    <button
+                      class="minus"
+                      value="decrease"
+                      onclick="minusShoes()"
+                    >
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class="shoesNumber"
+                      id="shoesNumber"
+                      value="0"
+                    />
+                    <button
+                      class="add"
+                      value="increase value"
+                      onclick="addShoes()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="priceTotal">
+              <hr />
+              <div class="shipping">
+                <div class="ship1">
+                  <p>Shipping</p>
+                </div>
+
+                <div class="shipppingCost" value="0">$19</div>
+              </div>
+
+              <hr />
+              <div class="total">
+                <div class="total1"><p>Total</p></div>
+                <div class="overAllTotal">
+                  <span id="totalCost">$0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <footer><div class="footer">created by Arun</div></footer>
+  </body>
+</html>
